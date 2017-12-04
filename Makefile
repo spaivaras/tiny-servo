@@ -2,7 +2,7 @@
 ### vvv EDIT BELOW vvv ###
 
 MCU_TARGET     = attiny13
-CLK_FREQ        = 9600000L
+CLK_FREQ        = 9600000
 
 ### ^^^ EDIT ABOVE ^^^ ###
 
