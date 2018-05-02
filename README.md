@@ -26,6 +26,6 @@ Code is designed around attiny13 with single timer and no external components. C
 ### Liability
 This project was built for my own needs. I won't be held liable for any physical or mental damage, of any kind, using this work. There is no warranty that this project will not blow your house up and leave your children orphans. Use on your own risk. Use common sense: always disconnect any objects that can do any harm while testing this code.
 
-### Copyright
-AGPLv3  - Aivaras Spaicys (See LICENSE for full license text)
+### Copyleft
+GNU AGPL v3  - Aivaras Spaicys (See LICENSE for full license text)
 
