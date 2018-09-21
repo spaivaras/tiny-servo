@@ -1,7 +1,7 @@
 ### vvv EDIT BELOW vvv ###
 MCU_TARGET      = attiny13
 CLK_FREQ        = 9600000
-LOW_FUSE        = 0x6a
+LOW_FUSE        = 0x7a
 HIGH_FUSE       = 0xff
 
 PROG_DEVICE     = usbasp
