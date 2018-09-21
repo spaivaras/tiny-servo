@@ -5,7 +5,7 @@
 
 #define MIN_SPEED 100                //1ms frame
 #define MAX_SPEED 200                //2ms frame
-#define EE_ADDRESS (uint8_t *)46     //Why not?
+#define EE_ADDRESS (uint8_t *)12     //Why not?
 #define INC PB0
 #define DEC PB4
 #define SAVE_DELAY 150               //3 seconds
@@ -94,8 +94,10 @@ int main (void)
 		// Increase/Decrease speed on button push (debounced)
 		if (highState == 0 && highProcessed == 0 && highTick >= 5) {
 			highProcessed = 1;
-			sPulse += 2;
-			needSave = 1;
+			if (sPulse + 2 <= MAX_SPEED) {
+				sPulse += 2;
+				needSave = 1;
+			}
 			saveTick = 0;
 		} else if (lowState == 0 && lowProcessed == 0 && lowTick >= 5) {
 			lowProcessed = 1;
